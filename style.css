@@ -110,8 +110,8 @@ button {
 .info-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: space-evenly;
     padding: 40px 0 64px;
 }
 
@@ -123,16 +123,26 @@ button {
 
 .card-title {
     margin-bottom: 40px;
+    text-align: center;
+}
+
+.card-outer {
+    justify-content: center;
+    display: flex;
 }
 
 .card-container {
     display: flex;
     gap: 28px;
     flex: auto;
+    justify-content: space-evenly;
+    max-width: 1200px;
 }
 
 .card {
     width: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-img {
@@ -189,6 +199,7 @@ button {
     justify-content: space-between;
     gap: 20px;
     flex-grow: 1;
+    align-items: center;
 }
 
 .call-text {
@@ -198,6 +209,7 @@ button {
 
 .call-button {
     outline: solid 2px white;
+    max-height: 40px;
 }
 
 .footer {
